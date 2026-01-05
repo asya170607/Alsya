@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Alsya Web Solution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: #e5e7eb;
+      scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(2, 6, 23, 0.8);
+      backdrop-filter: blur(10px);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      color: #38bdf8;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      margin-left: 25px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* HERO */
+    header {
+      padding: 140px 20px 100px;
+      text-align: center;
+      animation: fadeUp 1.2s ease;
+    }
+
+    header h2 {
+      font-size: 44px;
+      color: #38bdf8;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 18px;
+      color: #cbd5f5;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 32px;
+      background: #38bdf8;
+      color: #020617;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(56,189,248,0.5);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 100px 20px;
+      animation: fadeUp 1.2s ease;
+    }
+
+    h3 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(56,189,248,0.2);
+    }
+
+    /* IMAGE TECH */
+    .tech-image {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .tech-image img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    }
+
+    /* VISION MISSION */
+    .vision {
+      margin-top: 60px;
+      background: rgba(255,255,255,0.05);
+      padding: 40px;
+      border-radius: 20px;
+    }
+
+    .vision ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .vision li {
+      margin-bottom: 10px;
+      color: #cbd5f5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>ALSYA</h1>
+  <div>
+    <a href="#layanan">Layanan</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#visi">Visi & Misi</a>
+    <a href="https://wa.me/628XXXXXXXXXX">Kontak</a>
+  </div>
+</nav>
+
+<header>
+  <h2>Solusi Digital & AI Masa Depan</h2>
+  <p>
+    Alsya Web Solution menghadirkan teknologi web dan artificial intelligence
+    untuk membantu bisnis berkembang secara modern dan efisien.
+  </p>
+  <a href="#layanan" class="btn">Mulai Digitalisasi</a>
+</header>
+
+<section id="layanan">
+  <h3>Layanan Kami</h3>
+  <div class="services">
+    <div class="card">
+      <h4>Website Development</h4>
+      <p>Website profesional, cepat, responsive dan modern.</p>
+    </div>
+    <div class="card">
+      <h4>AI Solutions</h4>
+      <p>Solusi AI untuk automasi, analitik, dan efisiensi bisnis.</p>
+    </div>
+    <div class="card">
+      <h4>System Automation</h4>
+      <p>Pengembangan sistem berbasis kebutuhan perusahaan.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tentang">
+  <h3>Tentang Perusahaan</h3>
+  <p>
+    Alsya Web Solution adalah perusahaan teknologi yang berfokus pada
+    pengembangan website modern dan penerapan artificial intelligence
+    untuk mendukung transformasi digital di berbagai sektor.
+  </p>
+
+  <div class="tech-image">
+    <img src="https://images.unsplash.com/photo-1677442135133-33a8b2ae77e8" alt="AI & Web Technology">
+  </div>
+
+  <div class="vision" id="visi">
+    <h3>Visi</h3>
+    <p><strong>Kemudahan teknologi untuk semua.</strong></p>
+
+    <h3>Misi</h3>
+    <ul>
+      <li>Menyediakan solusi teknologi yang mudah digunakan dan terjangkau.</li>
+      <li>Membantu bisnis dan individu beradaptasi dengan era digital.</li>
+      <li>Mengembangkan inovasi berbasis web dan AI yang berkelanjutan.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  © 2026 Alsya Web Solution • AI & Web Technology
+</footer>
+
+</body>
+</html>
